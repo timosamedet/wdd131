@@ -73,7 +73,7 @@ main h1{
     overflow: hidden;
 }
 
-.card h3{
+.card h2{
     line-height: 40px;
     background-color: var(--primary-color);
     text-align: center;
@@ -82,7 +82,7 @@ main h1{
     font-size: 17px;
 }
 
-#card-two h3{
+#card-two h2{
     background-color: var(--secondary-color);
     color: #fff;
 }
@@ -107,13 +107,14 @@ main h1{
     margin-right: 20px;
 }
 
-#my-state h4{
+#my-state h3{
     margin-top: -1%;
     margin-bottom: 10px;
     border-bottom: 1.5px solid var(--border-color);
     width: 60%;
     text-align: center;
     padding-bottom: 5px;
+    font-size: 16px;
 }
 
 #my-state div{

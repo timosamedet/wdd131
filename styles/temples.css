@@ -1,0 +1,181 @@
+*{box-sizing: border-box;}
+
+:root {
+  --primary-color: #D0A3DC;
+  --secondary-color:#36454F;
+  --tertiary-color: #3498db;
+  --border-color: #e7e7e7;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-size: 14px;
+    font-family: "Pacifico", cursive;
+}
+header{
+    display: block;
+    background-color: var(--secondary-color);
+    color: white;
+}
+.temple-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.hamburger {
+    width: 30px;
+    height: 32px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-right: 20px;
+    margin-top: 25px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+.hamburger span {
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: white;
+      left: -20px;
+      transition: 0.4s;
+    }
+
+
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    top: 11px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 22px;
+}
+
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 11px;
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 11px;
+}
+
+.menu {
+    display: none;
+    padding: 10px;
+}
+
+.menu.show {
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.reversed {
+    flex-flow: row-reverse;
+}
+
+
+header div span {
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#temple-text{
+    margin-top: 29px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+nav ul li{
+    margin-bottom: 5px;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+nav a:hover{
+    text-decoration: overline;
+}
+
+main{
+    margin: 1rem auto;
+    max-width: 960px; 
+    padding: .5rem;
+}
+
+.container{
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 18px;
+    place-items: center;
+}
+
+main h1{
+    grid-column: span 2;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+figure{
+    margin: 0;
+}
+
+figure img{
+    width: 100%;
+}
+
+figcaption{
+    margin: auto;
+    font-size: 14px;
+    font-family: "Pacifico", cursive;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: #fff;
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+
+footer p{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 5px;
+}
+

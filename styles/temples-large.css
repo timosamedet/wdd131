@@ -1,0 +1,40 @@
+@media(min-width: 640px) {
+    header{
+        display:flex;
+        justify-content: space-between;
+        height: 73px;
+    }
+
+    header div span{
+        display: block !important;
+        margin: auto 20px;
+    }
+
+    .hamburger{
+        display: none;
+    }
+    .menu {
+        display: block;
+        margin: 0;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+        margin: 0;
+        height: 100%;
+        align-items: center;
+    }
+
+    nav ul li {
+		flex: 1 0 auto;
+        margin-bottom: 0;
+    }
+}
+
+@media(min-width: 800px){
+    nav ul{
+         column-gap: 30px;
+    }
+}            

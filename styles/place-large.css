@@ -1,0 +1,67 @@
+@media(min-width: 800px) {
+    header{
+        height: 70px;
+    }
+
+    header div h1 {
+        line-height: 70px;
+    }
+
+    main{
+        position: relative;
+    }
+
+     #div-hero-image{
+        border-bottom: none;
+    }
+
+    #section-data{
+        position: absolute;
+        top: 30px;
+        background-color: white;
+        left: 12px;
+        width: 240px;
+        opacity: 0.9;
+    }
+
+    #section-weather{
+        position: absolute;
+        bottom: 30px;
+        right: 12px;
+        background-color: white;
+        width: 240px;
+        opacity: 0.9;
+    }
+   
+    h2{
+        background-color: green;
+        color: #e7e7e7;
+        line-height: 50px;
+        margin-left: -5px;
+        margin-right: 20px;
+        text-align: left;
+        padding-left: 15px;
+    }
+    .data-weather li{
+        font-size: 14px;
+    }
+
+     #section-weather h2::after{
+        content: "";
+        position: absolute;
+        top: 35px;
+        right: 40px;
+        height: 30px;
+        width: 30px;
+        background: url('../images/rainy-day.svg') no-repeat center center;
+        background-size: contain;
+     }
+
+    #section-weather img {
+        display: none;
+    }
+
+    footer{
+        margin-top: 0px;
+    }
+}

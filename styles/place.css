@@ -1,6 +1,6 @@
 
 :root {
-  --primary-color: #167c16;
+  --primary-color: #075d07;
   --secondary-color:black;
   --border-color: #e7e7e7;
 }
@@ -14,7 +14,7 @@ body{
 header{
     height: 90px;
     background-color: var(--primary-color);
-    color: #e7e7e7;
+    color: white;
     border-bottom: 20px solid var(--secondary-color);
 }
 

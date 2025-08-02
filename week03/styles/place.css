@@ -1,0 +1,160 @@
+
+:root {
+  --primary-color: #167c16;
+  --secondary-color:black;
+  --border-color: #e7e7e7;
+}
+
+body{
+    font-family: "Libertinus Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    height: 90px;
+    background-color: var(--primary-color);
+    color: #e7e7e7;
+    border-bottom: 20px solid var(--secondary-color);
+}
+
+header div{
+    height: 100%;
+}
+
+header div h1{
+    margin: 0px;
+    text-align: center;
+    line-height: 90px;
+}
+
+main{
+    text-align: center;
+}
+
+#div-hero-image{
+    border-bottom: 5px solid red;
+}
+
+main div picture img{
+    width: 100%;
+    display: block;
+}
+
+#section-data{
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 30px;
+}
+
+h2{
+    margin-bottom: 35px;
+}
+
+.data-weather{
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+
+.data-weather li{
+    display: flex;
+    margin-top: 8px;
+}
+
+.data-weather-label{
+    font-weight: bold;
+    display: block;
+    width: 50%;
+    text-align: right;
+    margin-right: 5px;
+}
+
+#section-weather img{
+    margin-top: -5px;
+    height: 50px;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: #fff;
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+
+footer p{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 5px;
+}
+
+
+
+
+@media(min-width: 800px) {
+    header{
+        height: 70px;
+    }
+
+    header div h1 {
+        line-height: 70px;
+    }
+
+    main{
+        position: relative;
+    }
+
+     #div-hero-image{
+        border-bottom: none;
+    }
+
+    #section-data{
+        position: absolute;
+        top: 30px;
+        background-color: white;
+        left: 12px;
+        width: 240px;
+        opacity: 0.9;
+    }
+
+    #section-weather{
+        position: absolute;
+        bottom: 30px;
+        right: 12px;
+        background-color: white;
+        width: 240px;
+        opacity: 0.9;
+    }
+   
+    h2{
+        background-color: green;
+        color: #e7e7e7;
+        line-height: 50px;
+        margin-left: -5px;
+        margin-right: 20px;
+        text-align: left;
+        padding-left: 15px;
+    }
+    .data-weather li{
+        font-size: 14px;
+    }
+
+     #section-weather h2::after{
+        content: "";
+        position: absolute;
+        top: 35px;
+        right: 40px;
+        height: 30px;
+        width: 30px;
+        background: url('../images/rainy-day.svg') no-repeat center center;
+        background-size: contain;
+     }
+
+    #section-weather img {
+        display: none;
+    }
+
+    footer{
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals - Samuel E. Timothy</title>
+        <meta name="description" content="Samuel Edet Timothy's WDD 131 - Dynamic Web Fundamentals course Form website responsive for mobile and desktop view">
+        <meta name="author" content="Samuel Timothy">
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/form-large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="scripts/form.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <span>Product Review</span>
+        </header>
+        <main>
+            <form method="GET" action="review.html">
+                <div id="div-product">
+                    <label>
+                        <div>Product Name</div>
+                        <select name="product-name" id="product-name" required>
+                            <option value="" selected disabled>Select a Product ...</option>
+                        </select>
+                    </label>
+                </div>
+                <div id="div-rating">
+                    <span>Overall Rating</span>
+                    <div>
+                        <label>
+                            <div>&star;</div>
+                            <input name="star" id="star1" type="radio" required>
+                        </label>
+                        <label>
+                            <div>&star;&star;</div>
+                            <input name="star" id="star2" type="radio" required>
+                        </label>
+                        <label>
+                            <div>&star;&star;&star;</div>
+                            <input name="star" id="star3" type="radio" required>
+                        </label>
+                        <label>
+                            <div>&star;&star;&star;&star;</div>
+                            <input name="star"id="star4" type="radio" required>
+                        </label>
+                        <label>
+                            <div>&star;&star;&star;&star;&star;</div>
+                            <input name="star" id="star5" type="radio" required>
+                        </label>
+                    </div>
+                </div>
+                <div id="div-date-of-installation">
+                    <label>
+                        <div>Date of Installation</div>
+                        <input type="date" name="installation-date" id="installation-date" required>
+                    </label>
+                </div>
+                <div id="div-feature">
+                    <p>Which feature did you find useful in this product? <span>(Check all that apply)</span></p>
+                    <div>
+                        <label>
+                            <input name="durability" id="durability" value="" type="checkbox"><span>Durability</span>
+                        </label>
+                        <label>
+                            <input name="ease-of-use" id="ease-of-use" value="" type="checkbox"><span>Ease of Use</span>
+                        </label>
+                        <label>
+                            <input name="performance" id="performance" value="" type="checkbox"><span>Performance</span>
+                        </label>
+                        <label>
+                            <input name="design" id="design" value="" type="checkbox"><span>Design</span>
+                        </label>
+                    </div>
+                </div>
+                <div id="div-review">
+                    <label>
+                        <div>Written Review(Optional)</div>
+                        <textarea name="written-review" id="written-review" rows="6"></textarea>
+                    </label>
+                </div>
+                <div id="div-name">
+                    <label>
+                        <div>Your Name(Optional)</div>
+                        <input type="text" name="name" id="name">
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" value="Post Review">
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> 🌺 Samuel Edet Timothy 🌺 Nigeria</p>
+            <p id="lastModified">Last Modification: 01/09/2025 12:13:33</p>
+        </footer>
+    </body>
+</html>

@@ -45,6 +45,13 @@ p, span{
     font-size: 12px;
 }
 
+#div-product label span::after,
+#div-rating > span::after, 
+#div-date-of-installation label span::after{
+    content: " *";
+    color: #aa1111;
+}
+
 #div-product label span, #div-date-of-installation label span,
 #div-review label span, #div-name label span{
     display:block;

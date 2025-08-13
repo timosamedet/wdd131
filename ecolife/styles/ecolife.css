@@ -1,0 +1,307 @@
+*{box-sizing: border-box;}
+
+:root {  
+  --primary-color: #702963;
+  --secondary-color:#36454F;
+  --tertiary-color: #2C6E49;
+  --background-color: #fff;
+  --font-color: #2d2d2d;
+}
+
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    margin: 0px;
+}
+
+header{
+   display: block;
+   background: var(--primary-color);
+   /* padding: 10px 25px;
+   height: 75px;
+   justify-content: space-between;
+   line-height: 55px; */
+   color: #fff;
+}
+
+#header-image-div img{
+    width: 55px;
+    border-radius: 7px;
+    border: 2px solid #36454F;
+    margin-top: 11px;
+    margin-left: 20px;
+}
+
+.div-hamburger{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger {
+    width: 30px;
+    height: 32px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-right: 20px;
+    margin-top: 25px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+.hamburger span {
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: white;
+      transition: 0.4s;
+    }
+
+
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    top: 11px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 22px;
+}
+
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 11px;
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 11px;
+}
+
+.menu {
+    display: none;
+    padding: 10px;
+}
+
+.menu.show {
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+nav ul li{
+    margin-bottom: 5px;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+nav a:hover{
+    text-decoration: overline;
+}
+
+nav a.active{
+    text-decoration: none;
+    color: yellow;
+}
+
+/***HERO SECTION***/
+/* #section-hero img{
+    width: 100%;
+} */
+
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  height: 325px; /* Your requested height */
+  background-image: url('../images/ecolife_banner_resized.png'); /* Replace with your banner path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background-color: rgba(44, 110, 73, 0.6); /* Deep green transparent overlay */
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
+.hero-overlay h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+
+/***WELCOME SECTION***/
+.welcome-section {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 5px solid #2C6E49;
+}
+
+.welcome-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.welcome-section h1 {
+  color: #2C6E49; /* Deep Green */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.cta-btn {
+  display: inline-block;
+  /* background-color: #B33A3A; Deep Red */
+  background-color: #9c2d2d;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #922D2D; /* Darker red for hover */
+}
+
+
+
+/**FEATURED TIPS SECTION**/
+.carousel {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  background: #f2f1e7;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.carousel-container {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: none;
+  font-size: 1.2rem;
+  color: #2C6E49;
+  padding: 10px;
+}
+
+.carousel-slide.active {
+  display: block;
+  animation: fade 0.5s ease-in-out;
+}
+
+.carousel-controls {
+  margin-top: 10px;
+}
+
+.carousel-controls button {
+  background: #9c2d2d; /* red accent */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.carousel-controls button:hover {
+  background: #922D2D;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+
+footer{
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: #fff;
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+
+footer p{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 5px;
+}
+
+
+@media(min-width: 600px){
+     header{
+        display:flex;
+        justify-content: space-between;
+        height: 73px;
+    }
+     .hamburger{
+        display: none;
+    }
+    .menu {
+        display: block;
+        margin: 0;
+    }
+
+        nav ul{
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+        margin: 0;
+        height: 100%;
+        align-items: center;
+    }
+
+    nav ul li {
+		flex: 1 0 auto;
+        margin-bottom: 0;
+    }
+
+   
+}

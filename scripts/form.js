@@ -44,3 +44,24 @@ products.forEach(product =>{
 
     selectProduct.appendChild(option);
 })
+
+
+//keep track of reviews submitted
+const form = document.querySelector("form");
+form.addEventListener('submit', function (e) {
+    if (!form.checkValidity()) {
+      return;
+    }
+
+    let numberOfReviews = 0;
+    try {
+      numberOfReviews = localStorage.getItem("numberOfReviews");
+    } catch (error) {
+      console.log("no was review sumbmitted yet");
+    }
+
+    numberOfReviews++;
+    localStorage.setItem("numberOfReviews", numberOfReviews)
+
+  });
+

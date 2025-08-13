@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals - Samuel E. Timothy</title>
+        <meta name="description" content="Samuel Edet Timothy's WDD 131 - Dynamic Web Fundamentals course - ECOLIFE Project Website">
+        <meta name="author" content="Samuel Timothy">
+        <link rel="stylesheet" href="styles/ecolife.css">
+        <!-- <link rel="stylesheet" href="styles/filtered-temples-large.css"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="scripts/ecolife.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="div-hamburger" id="div-hamburger">
+                <div id="header-image-div">
+                    <img src="images/Ecolife-logo.png" alt="" width="100">
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>            
+            <nav  class="menu" id="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Life Style Tips</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </nav>    
+        </header>
+        <main>
+            <!-- <section id="section-hero">
+                <picture>
+                    <source srcset="images/ecolife_banner_resized_new_300.png" media="(min-width: 450px)">
+                    <img src="images/ecolife_banner_resized.png" alt="Obudu, Cross River Nigeria mountain resort wildlife">
+                </picture>
+            </section> -->
+            <section class="hero-section">
+                <div class="hero-overlay">
+                    <h1>A Beginner's Guide to Sustainable Living</h1>
+                </div>
+            </section>
+            <section class="welcome-section">
+                <div class="welcome-container">
+                    <h1>🌿 Welcome to Ecolife – Your Partner in a Greener Future</h1>
+                    <p>
+                    At <strong>Ecolife</strong>, we believe that small, conscious choices can create a big impact on our planet.
+                    Our mission is to inspire and empower individuals to live more sustainably—one habit at a time.
+                    </p>
+                    <p>
+                    Whether you’re exploring ways to <strong>reduce waste</strong>, <strong>save energy</strong>, or <strong>protect natural resources</strong>,
+                    we provide practical tips, tools, and community support to help you on your journey.
+                    </p>
+                    <p>
+                    Together, we can make eco-friendly living simple, enjoyable, and rewarding.
+                    Let’s take action today for a cleaner, greener tomorrow. 🌱
+                    </p>
+                    <a href="#start" class="cta-btn">Start Your Eco Journey</a>
+                </div>
+            </section>
+            <section class="carousel">
+                <h2>🌱 Featured Eco Tips</h2>
+                <div class="carousel-container">
+                    <div class="carousel-slide">Reduce single-use plastics by carrying a reusable water bottle.</div>
+                    <div class="carousel-slide">Switch to LED bulbs to save energy and reduce emissions.</div>
+                    <div class="carousel-slide">Compost your food scraps to enrich soil and cut waste.</div>
+                    <div class="carousel-slide">Plant a tree to absorb CO₂ and support wildlife.</div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button id="prevBtn">⬅</button>
+                    <button id="nextBtn">➡</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> 🌺 Samuel Edet Timothy 🌺 Nigeria</p>
+            <p id="lastModified">Last Modification: 01/09/2025 12:13:33</p>
+        </footer>
+    </body>
+</html>

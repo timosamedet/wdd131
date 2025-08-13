@@ -1,3 +1,19 @@
+html, body {
+      height: 100%;
+      margin: 0;
+}
+
+body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+
 .search-section {
   display: flex;
   justify-content: center;
@@ -23,7 +39,7 @@
 }
 
 .search-bar button {
-  background-color: #B33A3A;
+  background-color: #36454F;
   border: none;
   color: white;
   padding: 0 15px;
@@ -32,68 +48,8 @@
 }
 
 .search-bar button:hover {
-  background-color: #962e2e;
+  background-color: #3d8e60;
 }
-
-/* .accordion {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 15px;
-}
-
-.accordion-item {
-  border-bottom: 1px solid #ccc;
-}
-
-.accordion-header {
-  width: 100%;
-  padding: 15px;
-  font-size: 1.2rem;
-  text-align: left;
-  background-color: #2C6E49;
-  color: white;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
-
-.accordion-header:hover {
-  background-color: #245a3b;
-}
-
-.accordion-header i {
-  transition: transform 0.3s ease;
-}
-
-.accordion-header.active i {
-  transform: rotate(180deg);
-}
-
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-  background-color: #f4f4f4;
-  padding: 0 15px;
-}
-
-.accordion-content.open {
-  padding: 15px;
-}
-
-.accordion-content ul {
-  margin: 0;
-  padding-left: 20px;
-}
-
-.accordion-content li {
-  margin-bottom: 10px;
-} */
-
 
 
 .accordion {
@@ -102,7 +58,7 @@
 }
 
 .accordion-item {
-  margin-bottom: 15px; /* Space between accordions */
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
@@ -110,15 +66,24 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.accordion-header {
-  width: 100%;
-  background-color: #2C6E49;
-  color: white;
-  padding: 15px;
+
+.accordion-header{
+   width: 100%;
   text-align: left;
+  background: #2C6E49;
+  color: white;
+  padding: 10px;
+  font-size: 1.1em;
   border: none;
   cursor: pointer;
-  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-icon {
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .accordion-header:hover {
@@ -131,17 +96,16 @@
   background-color: #f4f4f4;
 }
 
-/* Pulse Sign */
 .pulse-sign {
   text-align: center;
   font-size: 2.5rem;
-  color: #2C6E49;
   margin: 40px 0 20px;
   animation: pulse 1.5s infinite;
 }
 
+
 @keyframes pulse {
-  0% { transform: scale(1); opacity: 0.7; }
-  50% { transform: scale(1.2); opacity: 1; }
-  100% { transform: scale(1); opacity: 0.7; }
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
 }

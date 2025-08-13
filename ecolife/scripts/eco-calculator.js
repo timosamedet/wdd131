@@ -40,3 +40,14 @@ document.getElementById("ecoForm").addEventListener("submit", function(event) {
   }
   document.getElementById("ecoTip").textContent = tip;
 });
+
+
+
+// Add active to current page
+const currentPage = window.location.pathname.split("/").pop();
+console.log("current page: " + currentPage);
+document.querySelectorAll("nav a").forEach(link => {
+    if(link.getAttribute("href") === currentPage){
+      link.classList.add('active');
+    }
+})

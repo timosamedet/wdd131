@@ -1,22 +1,3 @@
-const currentYear = document.getElementById("currentyear")
-const lastModified = document.getElementById("lastModified");
-
-const today = new Date();
-currentYear.innerHTML = today.getFullYear();
-lastModified.innerHTML = document.lastModified;
-
-
-const hamburger = document.getElementById("hamburger");
-const menu = document.getElementById("menu");
-
-hamburger.addEventListener("click", () => {
-    menu.classList.toggle("show");
-    hamburger.classList.toggle("active");
-    templeDiv.classList.toggle("reversed");
-});
-
-
-
 const slides = document.querySelectorAll('.carousel-slide');
 let currentIndex = 0;
 
@@ -45,3 +26,13 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % slides.length;
   showSlide(currentIndex);
 }, 5000);
+
+
+// Add active to current page
+const currentPage = window.location.pathname.split("/").pop();
+console.log("current page: " + currentPage);
+document.querySelectorAll("nav a").forEach(link => {
+    if(link.getAttribute("href") === currentPage){
+      link.classList.add('active');
+    }
+})

@@ -1,5 +1,19 @@
+html, body {
+      height: 100%;
+      margin: 0;
+}
+
+body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+}
+
+
 main {
+  flex: 1;
   max-width: 600px;
+  width: 77%;
   margin: 20px auto;
   padding: 15px;
   background: white;
@@ -26,7 +40,7 @@ input, select {
 
 button {
   margin-top: 20px;
-  background-color: #B33A3A; /* deep red */
+  background-color: #1e5b39;
   color: white;
   border: none;
   padding: 10px;
@@ -48,4 +62,17 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+
+@media(min-width: 500px) {
+  main{
+    width: 66%;
+  }
+}
+
+@media(min-width: 800px){
+  main{
+    width: 512px;
+  }
 }

@@ -4,15 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>WDD 131 - Dynamic Web Fundamentals - Samuel E. Timothy</title>
-        <meta name="description" content="Samuel Edet Timothy's WDD 131 - Dynamic Web Fundamentals course - ECOLIFE Project Website">
+        <meta name="description" content="Samuel Edet Timothy's WDD 131 - Dynamic Web Fundamentals course - ECO Life styles Project Website">
         <meta name="author" content="Samuel Timothy">
         <link rel="stylesheet" href="styles/ecolife.css">
         <link rel="stylesheet" href="styles/life-styles.css">
-        <!-- <link rel="stylesheet" href="styles/filtered-temples-large.css"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <script src="scripts/ecolife.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="scripts/hamburger.js" defer></script>
         <script src="scripts/life-styles.js" defer></script>
     </head>
     <body>
@@ -29,9 +29,9 @@
             </div>            
             <nav  class="menu" id="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Life Style Tips</a></li>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="ecolife.html" id="home">Home</a></li>
+                    <li><a href="life-styles.html" id="life-styles">Life Style Tips</a></li>
+                    <li><a href="eco-calculator.html" id="eco-calculator">Eco-Calculator</a></li>
                 </ul>
             </nav>    
         </header>
@@ -41,110 +41,39 @@
             <button id="searchBtn"><i class="fas fa-search"></i></button>
             </div>
         </section>
-
-        <!-- <main>
-            <div class="accordion">
-
-            <div class="accordion-item">
-                <button class="accordion-header">
-                Food Tips <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="accordion-content">
-                <ul>
-                    <li>Buy seasonal and local produce to reduce carbon footprint.</li>
-                    <li>Reduce meat consumption and try plant-based meals.</li>
-                    <li>Use reusable containers instead of single-use plastics.</li>
-                </ul>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <button class="accordion-header">
-                Travel Tips <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="accordion-content">
-                <ul>
-                    <li>Use public transport or carpool when possible.</li>
-                    <li>Choose eco-friendly accommodations.</li>
-                    <li>Pack light to reduce fuel consumption.</li>
-                </ul>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <button class="accordion-header">
-                Home Tips <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="accordion-content">
-                <ul>
-                    <li>Switch to energy-efficient light bulbs.</li>
-                    <li>Fix leaks to save water.</li>
-                    <li>Compost kitchen waste.</li>
-                </ul>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <button class="accordion-header">
-                Wellness Tips <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="accordion-content">
-                <ul>
-                    <li>Practice mindfulness to reduce stress.</li>
-                    <li>Stay hydrated and eat a balanced diet.</li>
-                    <li>Incorporate daily physical activity.</li>
-                </ul>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <button class="accordion-header">
-                Work & Productivity Tips <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="accordion-content">
-                <ul>
-                    <li>Set clear goals and prioritize tasks.</li>
-                    <li>Take regular breaks to maintain focus.</li>
-                    <li>Keep a clutter-free and organized workspace.</li>
-                </ul>
-                </div>
-            </div>
-
-            </div>
-        </main> -->
         <main>
             <!-- Accordions -->
             <div class="accordion">
             <div class="accordion-item">
-                <button class="accordion-header">Food Tips</button>
+                <button class="accordion-header">Food Tips <span class="accordion-icon">+</span></button>
                 <div class="accordion-content">
                 <p>Choose local, seasonal produce to reduce your carbon footprint. Cut down on single-use plastics by using reusable containers.</p>
                 </div>
             </div>
 
             <div class="accordion-item">
-                <button class="accordion-header">Travel Tips</button>
+                <button class="accordion-header">Travel Tips <span class="accordion-icon">+</span></button>
                 <div class="accordion-content">
                 <p>Opt for public transportation or carpooling whenever possible. Consider walking or cycling for short trips.</p>
                 </div>
             </div>
 
             <div class="accordion-item">
-                <button class="accordion-header">Home Tips</button>
+                <button class="accordion-header">Home Tips <span class="accordion-icon">+</span></button>
                 <div class="accordion-content">
                 <p>Switch to energy-efficient appliances and LED bulbs. Conserve water by fixing leaks and using low-flow fixtures.</p>
                 </div>
             </div>
 
             <div class="accordion-item">
-                <button class="accordion-header">Work Tips</button>
+                <button class="accordion-header">Work Tips <span class="accordion-icon">+</span></button>
                 <div class="accordion-content">
                 <p>Reduce paper waste by going digital. Encourage green office initiatives like recycling programs and plant-based lunches.</p>
                 </div>
             </div>
 
             <div class="accordion-item">
-                <button class="accordion-header">Fitness Tips</button>
+                <button class="accordion-header">Fitness Tips <span class="accordion-icon">+</span></button>
                 <div class="accordion-content">
                 <p>Exercise outdoors when possible to save on gym energy use. Use eco-friendly yoga mats and reusable water bottles.</p>
                 </div>

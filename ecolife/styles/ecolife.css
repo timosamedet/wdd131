@@ -19,10 +19,6 @@ body {
 header{
    display: block;
    background: var(--primary-color);
-   /* padding: 10px 25px;
-   height: 75px;
-   justify-content: space-between;
-   line-height: 55px; */
    color: #fff;
 }
 
@@ -121,25 +117,22 @@ nav a{
     padding: 0.3rem;
 }
 
+nav a.active{
+    text-decoration: none;
+    color: #87ff00;
+    text-decoration: none !important;
+}
+
 nav a:hover{
     text-decoration: overline;
 }
 
-nav a.active{
-    text-decoration: none;
-    color: yellow;
-}
 
 /***HERO SECTION***/
-/* #section-hero img{
-    width: 100%;
-} */
-
-/* Hero Section Styles */
 .hero-section {
   position: relative;
-  height: 325px; /* Your requested height */
-  background-image: url('../images/ecolife_banner_resized.png'); /* Replace with your banner path */
+  height: 325px; 
+  background-image: url('../images/ecolife_banner_resized.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -148,7 +141,7 @@ nav a.active{
 }
 
 .hero-overlay {
-  background-color: rgba(44, 110, 73, 0.6); /* Deep green transparent overlay */
+  background-color: rgba(44, 110, 73, 0.6);
   padding: 20px 40px;
   border-radius: 8px;
 }
@@ -176,7 +169,7 @@ nav a.active{
 }
 
 .welcome-section h1 {
-  color: #2C6E49; /* Deep Green */
+  color: #2C6E49;
   font-size: 2rem;
   margin-bottom: 20px;
 }
@@ -190,7 +183,6 @@ nav a.active{
 
 .cta-btn {
   display: inline-block;
-  /* background-color: #B33A3A; Deep Red */
   background-color: #9c2d2d;
   color: white;
   padding: 12px 24px;
@@ -201,7 +193,7 @@ nav a.active{
 }
 
 .cta-btn:hover {
-  background-color: #922D2D; /* Darker red for hover */
+  background-color: #922D2D; 
 }
 
 
@@ -209,7 +201,7 @@ nav a.active{
 /**FEATURED TIPS SECTION**/
 .carousel {
   max-width: 600px;
-  margin: auto;
+  margin: 60px auto;
   text-align: center;
   padding: 20px;
   background: #f2f1e7;
@@ -226,7 +218,7 @@ nav a.active{
 .carousel-slide {
   display: none;
   font-size: 1.2rem;
-  color: #2C6E49;
+  color: #154e2e;
   padding: 10px;
 }
 
@@ -240,7 +232,7 @@ nav a.active{
 }
 
 .carousel-controls button {
-  background: #9c2d2d; /* red accent */
+  background: #9c2d2d;
   color: white;
   border: none;
   padding: 8px 12px;
@@ -302,6 +294,11 @@ footer p{
 		flex: 1 0 auto;
         margin-bottom: 0;
     }
+
+    nav a.active{
+    border: 1.5px solid #fff;
+    border-radius: 3px;
+}
 
    
 }
